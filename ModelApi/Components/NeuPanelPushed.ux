@@ -1,0 +1,10 @@
+<Container ux:Class="NeuPanelPushed" Subtree="innerPanel">
+    <Rectangle Layer="Background" CornerRadius="15">
+        <Stroke Width="2" Color="Main"/>
+        <DropShadow Color="DarkShadow" Size="3" Distance="2" Angle="110" />
+        <DropShadow Color="LightShadow" Size="3" Distance="2" Angle="-60" />
+    </Rectangle>
+    <DockPanel ux:Binding="Children">
+        <DockPanel ux:Name="innerPanel" Padding="10"/>
+    </DockPanel>
+</Container>

@@ -1,0 +1,22 @@
+<Panel ux:Class="NeuButton" Padding="10" Font="Regular" TitleColor="Black" FontSize="{height(this) * 0.4}">
+    <string ux:Property="Title" />
+    <float4 ux:Property="TitleColor" />
+    <Font ux:Property="Font" />
+    <int ux:Property="FontSize" />
+    
+    <Text ux:Name="title" Value="{ReadProperty Title}" Font="{ReadProperty Font}" Color="{ReadProperty TitleColor}" FontSize="{ReadProperty FontSize}" Alignment="Center"  HitTestMode="None"/>
+    
+    <Rectangle Layer="Background" Size="100%" Color="Main" CornerRadius="{height(this) * 0.5}">
+        <Stroke Color="#EAF0F8"/>
+        <Shadow ux:Name="ds" Color="DarkShadow" Size="10" Distance="7" Angle="110" Mode="Background" />
+        <Shadow ux:Name="ls" Color="LightShadow" Size="10" Distance="7" Angle="-60" Mode="Background" />
+    </Rectangle>
+
+    <WhilePressed>
+        <Change ds.Size="1" Duration=".05"/>
+        <Change ds.Distance="1" Duration=".05"/>
+        <Change ls.Size="1" Duration=".05"/>
+        <Change ls.Distance="1" Duration=".05"/>
+        <Scale Target="title" Factor=".85" Duration=".05" />
+    </WhilePressed>   
+</Panel>

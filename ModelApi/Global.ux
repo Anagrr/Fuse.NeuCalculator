@@ -1,0 +1,12 @@
+<Panel ux:Class="Global">
+
+    <!-- Fonts -->
+    <Font File="Assets/Fonts/Montserrat-Regular.ttf" ux:Global="Regular"/>
+    <Font File="Assets/Fonts/Montserrat-Light.ttf" ux:Global="Light"/>
+    <!-- Colors -->    
+    <float4 ux:Global="LightRed" ux:Value="#ef958c" />
+    <float4 ux:Global="Main" ux:Value="#E0E5EC" />
+    <float4 ux:Global="LightShadow" ux:Value="#fff" />
+    <float4 ux:Global="DarkShadow" ux:Value="#A3B1C6" />
+    <float4 ux:Global="Grey" ux:Value="#666"/>
+</Panel>

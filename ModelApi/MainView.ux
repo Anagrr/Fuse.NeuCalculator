@@ -1,0 +1,22 @@
+<App>
+    <ClientPanel Model="MainView" Color="Main">
+        <DockPanel Padding="20">
+
+            <NeuPanelPushed Dock="Fill" Margin="0,0,0,30" >
+                <Text Dock="Top" Font="Light" Height="30" FontSize="25" TextAlignment="Right" Alignment="VerticalCenter" Value="{SecondOutput}" Color="DarkShadow"/>
+                <Text Dock="Top" Font="Light" Height="30" FontSize="25" TextAlignment="Right" Alignment="VerticalCenter" Value="{Operation}" Color="LightRed"/>
+                <Text Dock="Bottom" Font="Light" FontSize="50" TextAlignment="Right" Alignment="VerticalCenter" TextWrapping="Wrap" Value="{FirstOutput}" Color="DarkShadow" />    
+            </NeuPanelPushed>            
+
+            <StackPanel Dock="Bottom" ItemSpacing="{Keyboard.spacing}">
+                <Each Items="{Keyboard.rows}">
+                    <StackPanel Orientation="Horizontal" Width="100%" ItemSpacing="{Keyboard.spacing}" ContentAlignment="Center">
+                        <Each Items="{buttons}">
+                            <NeuButton Title="{title}" TitleColor="{color}" Size="{size}" Clicked="{onKeyPressed}"/>
+                        </Each>
+                    </StackPanel>
+                </Each>
+            </StackPanel>
+        </DockPanel>
+    </ClientPanel>
+</App>
