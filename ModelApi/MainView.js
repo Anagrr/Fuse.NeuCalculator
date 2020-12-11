@@ -18,21 +18,13 @@ export default class MainView {
                                 : `-${this.FirstOutput}`;
                 break; 
             case '%' : 
-                this.onOperationButtonPressed(value);
-                break; 
             case '/' :
-                this.onOperationButtonPressed(value);
-                break; 
-            case 'x' : 
-                this.onOperationButtonPressed(value);
-                break; 
             case '+' :
-                this.onOperationButtonPressed(value);
-                break; 
             case '-' :
                 this.onOperationButtonPressed(value);
                 break; 
             case '=' :
+                if(!this.Operation || this.IsEmptyFirstOutput) return;
                 this.calculate();
                 break; 
             case '0':
@@ -43,14 +35,10 @@ export default class MainView {
                 case '.':
                 if(!this.FirstOutput.includes('.')) {
                     this.FirstOutput = `${this.FirstOutput}${value}`;
-                }else {
-
                 }
                 break;
             default :
-                if(this.IsMaxLength) {
-                    return;
-                }
+                if(this.IsMaxLength) return;
                 this.FirstOutput = `${this.IsEmptyFirstOutput ? '' : this.FirstOutput}${value}`;
         }        
     }

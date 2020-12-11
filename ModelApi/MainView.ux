@@ -1,12 +1,15 @@
 <App>
+    <Text ux:Class="OutputLabel" Dock="Top" Font="Light"  FontSize="25" 
+          TextAlignment="Right" Alignment="VerticalCenter" Color="DarkShadow"/>
+
     <ClientPanel Model="MainView" Color="Main">
         <DockPanel Padding="20">
 
             <NeuPanelPushed Dock="Fill" Margin="0,0,0,30" >
-                <Text Dock="Top" Font="Light" Height="30" FontSize="25" TextAlignment="Right" Alignment="VerticalCenter" Value="{SecondOutput}" Color="DarkShadow"/>
-                <Text Dock="Top" Font="Light" Height="30" FontSize="25" TextAlignment="Right" Alignment="VerticalCenter" Value="{Operation}" Color="LightRed"/>
-                <Text Dock="Bottom" Font="Light" FontSize="50" TextAlignment="Right" Alignment="VerticalCenter" TextWrapping="Wrap" Value="{FirstOutput}" Color="DarkShadow" />    
-            </NeuPanelPushed>            
+                <OutputLabel Height="30" Value="{SecondOutput}" />
+                <OutputLabel Height="30" Value="{Operation}" Color="LightRed"/>
+                <OutputLabel Dock="Bottom" FontSize="50" TextWrapping="Wrap" Value="{FirstOutput}" />
+            </NeuPanelPushed>          
 
             <StackPanel Dock="Bottom" ItemSpacing="{Keyboard.spacing}">
                 <Each Items="{Keyboard.rows}">
