@@ -1,0 +1,27 @@
+<App>
+    <Text ux:Class="OutputLabel" Dock="Top" Font="Light"  FontSize="25" 
+          TextAlignment="Right" Alignment="VerticalCenter" Color="DarkShadow"/>
+
+    <JavaScript File="MainView.js"/>
+
+    <ClientPanel Color="Main">
+        <DockPanel Padding="20">
+
+            <NeuPanelPushed Dock="Fill" Margin="0,0,0,30" >
+                <OutputLabel Height="30" Value="{SecondOutput}" />
+                <OutputLabel Height="30" Value="{Operation}" Color="LightRed"/>
+                <OutputLabel Dock="Bottom" FontSize="50" TextWrapping="Wrap" Value="{FirstOutput}" />
+            </NeuPanelPushed>
+
+            <StackPanel Dock="Bottom" ItemSpacing="{Keyboard.spacing}">
+                <Each Items="{Keyboard.rows}">
+                    <StackPanel Orientation="Horizontal" Width="100%" ItemSpacing="{Keyboard.spacing}" ContentAlignment="Center">
+                        <Each Items="{buttons}">
+                            <NeuButton Title="{title}" TitleColor="{color}" Size="{size}" Clicked="{onKeyPressed}"/>
+                        </Each>
+                    </StackPanel>
+                </Each>
+            </StackPanel>
+        </DockPanel>
+    </ClientPanel>
+</App>

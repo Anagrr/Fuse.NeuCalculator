@@ -1,0 +1,21 @@
+{
+  "RootNamespace":"",
+  "Packages": [
+    "Fuse",
+    "FuseJS"
+  ],
+  "Includes": [
+    "*",
+    "**.js:Bundle"
+  ],
+  "Title": "NeuCalculator",
+  "Version": "0.0.1",
+
+  "Mobile": {
+		"Orientations": "Portrait"
+	},
+  "Android": {
+		"ApplicationLabel": "NeuCalculator",
+    "Package": "com.anagr.neucalculator",
+  }
+}
