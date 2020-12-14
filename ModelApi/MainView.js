@@ -18,6 +18,7 @@ export default class MainView {
                                 : `-${this.FirstOutput}`;
                 break; 
             case '%' : 
+            case 'x' :
             case '/' :
             case '+' :
             case '-' :
