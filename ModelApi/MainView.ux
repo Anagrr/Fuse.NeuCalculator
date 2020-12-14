@@ -3,12 +3,12 @@
           TextAlignment="Right" Alignment="VerticalCenter" Color="DarkShadow"/>
 
     <ClientPanel Model="MainView" Color="Main">
-        <DockPanel Padding="20">
+        <DockPanel Padding="20,0,20,20">
 
             <NeuPanelPushed Dock="Fill" Margin="0,0,0,30" >
                 <OutputLabel Height="30" Value="{SecondOutput}" />
                 <OutputLabel Height="30" Value="{Operation}" Color="LightRed"/>
-                <OutputLabel Dock="Bottom" FontSize="50" TextWrapping="Wrap" Value="{FirstOutput}" />
+                <OutputLabel Dock="Bottom" FontSize="43" TextWrapping="Wrap" Value="{FirstOutput}" />
             </NeuPanelPushed>          
 
             <StackPanel Dock="Bottom" ItemSpacing="{Keyboard.spacing}">

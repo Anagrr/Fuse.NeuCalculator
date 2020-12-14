@@ -15,7 +15,15 @@
 		"Orientations": "Portrait"
 	},
   "Android": {
-		"ApplicationLabel": "NeuCalculator",
+	"ApplicationLabel": "NeuCalculator",
     "Package": "com.anagr.neucalculator",
+	"Icons":{
+		"LDPI": "Assets/Images/icon.jpg",
+		"MDPI": "Assets/Images/icon.jpg",
+		"HDPI": "Assets/Images/icon.jpg",
+		"XHDPI": "Assets/Images/icon.jpg",
+		"XXHDPI": "Assets/Images/icon.jpg",
+		"XXXHDPI": "Assets/Images/icon.jpg"
+	}
   }
 }
