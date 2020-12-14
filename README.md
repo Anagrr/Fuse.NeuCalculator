@@ -1,5 +1,5 @@
 # NeuCalculator
- Simple calculator with Neumorphic desing
+ Simple calculator with Neumorphism design.
  
 ## Was made in two variants:
 - The [First](Observables/) was made by [Fuse's Observables](https://fuseopen.com/docs/fusejs/observable.html) way
